@@ -1,0 +1,382 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  text-transform: uppercase;
+  transition: background-color 0.6s;
+  z-index: 100;
+  background-color: rgba(50, 50, 50, 0.9);
+}
+nav .navbar-toggler {
+  padding: 10px 15px;
+}
+nav .navbar-brand {
+  font-weight: bold;
+}
+nav .nav-link,
+nav .navbar-nav .show > .nav-link,
+nav .navbar-brand,
+nav .fa-bars {
+  color: #f4d2b9;
+}
+nav .nav-link:focus,
+nav .nav-link:hover,
+nav .navbar-nav .nav-link.active,
+nav .navbar-nav .show > .nav-link {
+  color: rgb(255, 255, 255);
+}
+
+.navbar-brand .highlight {
+  color: #fcf8ef;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+}
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/assets/Women_ShowingNails.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: -1;
+}
+.header__bgc {
+  width: 90%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.2274509804);
+  box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2274509804);
+}
+.header__bgc--heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #f4d2b9;
+  z-index: 1;
+}
+.header__bgc--text {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  color: #f4d2b9;
+}
+
+.whatwedo {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.whatwedo__box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+  padding: 2em;
+}
+.whatwedo__nails {
+  padding: 2em;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-image: url("../assets/asia-4056942_1920.jpg");
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(244, 210, 185, 0.5);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+.whatwedo__nails img {
+  width: 100px;
+  height: 100px;
+}
+.whatwedo__nails h3 {
+  margin: 20px;
+  color: #323232;
+  font-size: 2rem;
+}
+.whatwedo__nails p {
+  color: #323232;
+  font-size: 1rem;
+}
+
+.ourstory {
+  position: relative; /* Dodaj pozycjonowanie */
+  z-index: 10;
+}
+.ourstory__img {
+  position: absolute;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgb(0, 0, 0)), url("../assets/AdobeStock_398200700-905x604.jpeg");
+  width: 100%;
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  background-repeat: no-repeat;
+}
+.ourstory__box {
+  position: relative;
+  display: flex;
+  color: #f1e9d6;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 2em;
+  z-index: 10;
+  top: 150px;
+}
+.ourstory__box--heading {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+.ourstory__box--text {
+  font-style: 2rem;
+}
+.ourstory__box--btn {
+  cursor: pointer;
+  width: 150px;
+  height: 50px;
+  color: #f1e9d6;
+  background-color: rgba(50, 50, 50, 0.514);
+  border: 1px solid #f1e9d6;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+.ourstory__box--btn:hover {
+  width: 170px;
+  height: 60px;
+  color: #323232;
+  background-color: #f1e9d6;
+}
+
+.matchpolishes {
+  width: 100%;
+  height: 100vh;
+  position: relative; /* Zmienione z sticky na relative */
+  z-index: 5;
+  display: flex;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgb(0, 0, 0)), url("../assets/f3430ac7263140291a88d672cfb57d54.jpg");
+  background-size: cover; /* Zmienione na cover, żeby tło wypełniało cały ekran */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Zapewnia efekt parallax */
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 30%; /* Jeśli chcesz mieć przestrzeń na początku */
+}
+.matchpolishes__heading {
+  font-size: 2.5rem;
+  color: #f1e9d6;
+}
+
+.price {
+  background-color: #323232;
+  height: 80vh;
+  padding: 2em;
+}
+.price__box {
+  display: flex;
+  color: #f1e9d6;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 2em;
+}
+.price__box--heading {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+.price__treatmentprice {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+.price__treatmentprice--item {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 40px;
+}
+.price__treatmentprice--item--heading {
+  font-size: 1.5rem;
+  width: auto;
+  margin-right: 0px;
+}
+.price__treatmentprice--item--price1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  width: auto;
+}
+
+.fallowus__img1 {
+  height: 70vh;
+  width: 100%;
+  background-image: url("../assets/Women_ShowingNails.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+}
+.fallowus__img1--bg {
+  height: 40vh;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.2274509804);
+  box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2274509804);
+  border-radius: 8px;
+  color: #f4d2b9;
+  margin: auto;
+  top: 50%;
+  transform: translateY(50%);
+}
+.fallowus__img1--bg a i {
+  font-size: 6rem;
+  color: #f4d2b9;
+  margin-bottom: 1em;
+}
+.fallowus__img1--bg h2 {
+  display: flex;
+  text-align: center;
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+.contact {
+  width: 100%;
+  padding: 2em;
+  background-color: #323232;
+  height: 90vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.contact__heading {
+  padding-top: 20px;
+  font-size: 2.8rem;
+  color: #f4d2b9;
+  animation: fadeInUp 1.5s ease-out forwards;
+}
+.contact__box {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 50%;
+  margin: 2em auto;
+}
+.contact__input {
+  background-color: rgba(0, 0, 0, 0);
+  padding: 1em;
+  border: 1px solid #f4d2b9;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  animation: fadeInUp 1.5s ease-out forwards;
+}
+.contact__input:focus {
+  outline: none;
+}
+.contact__textarea {
+  padding: 1em;
+  border: 1px solid #f4d2b9;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, 0);
+  width: 100%;
+  box-sizing: border-box;
+  height: 150px;
+  resize: vertical;
+  animation: fadeInUp 1.5s ease-out forwards;
+}
+.contact__textarea:focus {
+  outline: none;
+}
+.contact__send-button {
+  padding: 1em;
+  background-color: #f4d2b9;
+  color: #323232;
+  border: none;
+  width: 30%;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.contact__send-button:hover {
+  background-color: #a89383;
+}
+.contact__input:focus, .contact__textarea:focus {
+  outline: none;
+  background-color: #a89383;
+}
+.contact__input::-moz-placeholder, .contact__textarea::-moz-placeholder {
+  color: #f4d2b9;
+}
+.contact__input::placeholder, .contact__textarea::placeholder {
+  color: #f4d2b9;
+}
+
+footer {
+  background-color: #f4d2b9;
+  text-align: center;
+  padding: 40px;
+}
+
+@media (max-width: 576px) {
+  .whatwedo__box {
+    grid-template-columns: 1fr;
+  }
+  .contact__box {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 90%;
+    margin: 2em auto;
+  }
+}
+@media (min-width: 992px) {
+  .fallowus__img1--bg i {
+    font-size: 4rem;
+    color: #f4d2b9;
+  }
+  .fallowus__img1--bg--heading {
+    font-size: 4rem;
+    text-transform: uppercase;
+  }
+  .matchpolishes {
+    margin-top: 20%;
+  }
+}/*# sourceMappingURL=style.css.map */

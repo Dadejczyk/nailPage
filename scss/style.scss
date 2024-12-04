@@ -1,0 +1,373 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+nav {
+	text-transform: uppercase;
+	transition: background-color 0.6s;
+	z-index: 100;
+	background-color: rgba(50, 50, 50, 0.9);
+
+	.navbar-toggler {
+		padding: 10px 15px;
+	}
+
+	.navbar-brand {
+		font-weight: bold;
+	}
+
+	.nav-link,
+	.navbar-nav .show > .nav-link,
+	.navbar-brand,
+	.fa-bars {
+		color: #f4d2b9;
+	}
+
+	.nav-link:focus,
+	.nav-link:hover,
+	.navbar-nav .nav-link.active,
+	.navbar-nav .show > .nav-link {
+		color: rgb(255, 255, 255);
+	}
+}
+.navbar-brand {
+	.highlight {
+		color: #fcf8ef;
+	}
+}
+
+.header {
+	display: flex;
+	width: 100%;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	z-index: 0;
+	overflow: hidden;
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-image: url('/assets/Women_ShowingNails.jpg');
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+		z-index: -1;
+	}
+
+	&__bgc {
+		width: 90%;
+		height: 70%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 10px;
+		position: relative;
+		background-color: #0000003a;
+		box-shadow: 0 0 15px 5px #0000003a;
+
+		&--heading {
+			font-size: 2.5rem;
+			font-weight: bold;
+			text-transform: uppercase;
+			color: #f4d2b9;
+			z-index: 1;
+		}
+
+		&--text {
+			font-size: 2rem;
+			font-weight: bold;
+			text-transform: uppercase;
+			margin-bottom: 40px;
+			color: #f4d2b9;
+		}
+	}
+}
+.whatwedo {
+	background-color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	&__box {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 1em;
+		padding: 2em;
+	}
+	&__nails {
+		padding: 2em;
+		transition: transform 0.3s ease, box-shadow 0.3s ease;
+		background-image: url('../assets/asia-4056942_1920.jpg');
+		background-size: cover;
+		background-position: center;
+		background-color: rgba(244, 210, 185, 0.5);
+		border-radius: 10px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		flex-direction: column;
+		img {
+			width: 100px;
+			height: 100px;
+		}
+		h3 {
+			margin: 20px;
+			color: #323232;
+			font-size: 2rem;
+		}
+		p {
+			color: #323232;
+			font-size: 1rem;
+		}
+	}
+}
+
+.ourstory {
+	position: relative; /* Dodaj pozycjonowanie */
+	z-index: 10;
+	&__img {
+		position: absolute;
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)),
+			url('../assets/AdobeStock_398200700-905x604.jpeg');
+
+		width: 100%;
+		height: 70vh;
+		background-size: cover;
+		background-position: center;
+		z-index: -1;
+		background-repeat: no-repeat;
+	}
+	&__box {
+		position: relative;
+		display: flex;
+		color: #f1e9d6;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		text-align: center;
+		padding: 2em;
+		z-index: 10;
+		top: 150px;
+		&--heading {
+			font-size: 2.5rem;
+			margin-bottom: 20px;
+		}
+		&--text {
+			font-style: 2rem;
+		}
+		&--btn {
+			cursor: pointer;
+			width: 150px;
+			height: 50px;
+			color: #f1e9d6;
+			background-color: rgba(50, 50, 50, 0.514);
+			border: 1px solid #f1e9d6;
+			border-radius: 10px;
+			transition: all 0.3s ease-in-out;
+			&:hover {
+				width: 170px;
+				height: 60px;
+				color: #323232;
+				background-color: #f1e9d6;
+			}
+		}
+	}
+}
+.matchpolishes {
+	width: 100%;
+	height: 100vh;
+	position: relative; /* Zmienione z sticky na relative */
+	z-index: 5;
+	display: flex;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)),
+		url('../assets/f3430ac7263140291a88d672cfb57d54.jpg');
+	background-size: cover; /* Zmienione na cover, żeby tło wypełniało cały ekran */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed; /* Zapewnia efekt parallax */
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	margin-top: 30%; /* Jeśli chcesz mieć przestrzeń na początku */
+	&__heading {
+		font-size: 2.5rem;
+		color: #f1e9d6;
+	}
+}
+.price {
+	background-color: #323232;
+	height: 80vh;
+	padding: 2em;
+	&__box {
+		display: flex;
+		color: #f1e9d6;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		text-align: center;
+		padding: 2em;
+
+		&--heading {
+			font-size: 2.5rem;
+			margin-bottom: 20px;
+		}
+	}
+
+	&__treatmentprice {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin-top: 20px;
+		&--item {
+			display: flex;
+			justify-content: space-between;
+			width: 100%;
+			margin-bottom: 40px;
+			&--heading {
+				font-size: 1.5rem;
+				width: auto;
+				margin-right: 0px;
+			}
+
+			&--price1 {
+				font-size: 1.5rem;
+				font-weight: bold;
+				width: auto;
+			}
+		}
+	}
+}
+
+.fallowus {
+	&__img1 {
+		height: 70vh;
+		width: 100%;
+		background-image: url('../assets/Women_ShowingNails.jpg');
+		background-size: cover;
+		background-position: center;
+		margin: 0;
+		&--bg {
+			height: 40vh;
+			width: 80%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			background-color: #0000003a;
+			box-shadow: 0 0 15px 5px #0000003a;
+			border-radius: 8px;
+			color: #f4d2b9;
+			margin: auto;
+			top: 50%;
+			transform: translateY(50%);
+			a i {
+				font-size: 6rem;
+				color: #f4d2b9;
+				margin-bottom: 1em;
+			}
+
+			h2 {
+				display: flex;
+				text-align: center;
+				font-size: 4rem;
+				text-transform: uppercase;
+			}
+		}
+	}
+}
+.contact {
+	width: 100%;
+	padding: 2em;
+	background-color: #323232;
+	height: 90vh;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+
+	&__heading {
+		padding-top: 20px;
+		font-size: 2.8rem;
+		color: #f4d2b9;
+		animation: fadeInUp 1.5s ease-out forwards;
+	}
+	&__box {
+		display: flex;
+		flex-direction: column;
+		gap: 1em;
+		width: 50%;
+		margin: 2em auto;
+	}
+	&__input {
+		background-color: rgba(0, 0, 0, 0);
+		padding: 1em;
+		border: 1px solid #f4d2b9;
+		border-radius: 8px;
+		font-size: 1rem;
+		width: 100%;
+		box-sizing: border-box;
+		animation: fadeInUp 1.5s ease-out forwards;
+		&:focus {
+			outline: none;
+		}
+	}
+	&__textarea {
+		padding: 1em;
+		border: 1px solid #f4d2b9;
+		border-radius: 8px;
+		font-size: 1rem;
+		background-color: rgba(0, 0, 0, 0);
+		width: 100%;
+		box-sizing: border-box;
+
+		height: 150px;
+		resize: vertical;
+		animation: fadeInUp 1.5s ease-out forwards;
+		&:focus {
+			outline: none;
+		}
+	}
+	&__send-button {
+		padding: 1em;
+		background-color: #f4d2b9;
+		color: #323232;
+		border: none;
+		width: 30%;
+		border-radius: 8px;
+		font-size: 1.2rem;
+		cursor: pointer;
+		transition: background-color 0.3s ease;
+		&:hover {
+			background-color: #a89383;
+		}
+	}
+	&__input:focus,
+	&__textarea:focus {
+		outline: none;
+		background-color: #a89383;
+	}
+
+	&__input::placeholder,
+	&__textarea::placeholder {
+		color: #f4d2b9;
+	}
+}
+footer {
+	background-color: #f4d2b9;
+	text-align: center;
+	padding: 40px;
+}
+@import './small';
+@import './large';
