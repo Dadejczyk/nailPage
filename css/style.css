@@ -45,8 +45,7 @@ nav .navbar-nav .show > .nav-link {
   background-image: url("../assets/Women_ShowingNails.jpg");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  margin: 0;
 }
 .header__bgc {
   width: 90%;
@@ -170,7 +169,6 @@ nav .navbar-nav .show > .nav-link {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   justify-content: center;
   align-items: center;
   flex-direction: column;
