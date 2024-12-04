@@ -70,7 +70,7 @@ nav .navbar-nav .show > .nav-link {
   font-size: 2rem;
   font-weight: bold;
   text-transform: uppercase;
-  margin-bottom: 40px;
+  margin-bottom: 90px;
   color: #f4d2b9;
 }
 
@@ -141,7 +141,7 @@ nav .navbar-nav .show > .nav-link {
   margin-bottom: 20px;
 }
 .ourstory__box--text {
-  font-style: 2rem;
+  font-size: 1rem;
 }
 .ourstory__box--btn {
   cursor: pointer;
@@ -338,6 +338,11 @@ footer {
   text-align: center;
   padding: 40px;
 }
+footer a {
+  color: #323232;
+  margin: 10px;
+  text-decoration: none;
+}
 
 @media (max-width: 576px) {
   .whatwedo__box {
@@ -371,5 +376,17 @@ footer {
   }
   .matchpolishes {
     margin-top: 20%;
+  }
+  .header__bgc--heading {
+    font-size: 4rem;
+  }
+  .header__bgc--text {
+    font-size: 4rem;
+  }
+  .ourstory__box--heading {
+    font-size: 4rem;
+  }
+  .ourstory__box--text {
+    font-size: 2rem;
   }
 }/*# sourceMappingURL=style.css.map */
