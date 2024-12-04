@@ -19,13 +19,18 @@
 	.fallowus {
 		&__img1 {
 			&--bg {
-				a i{
+				a i {
 					font-size: 4rem;
 				}
 				h2 {
-                    font-size: 2rem;
+					font-size: 2rem;
 				}
 			}
 		}
 	}
+    .headerbig{
+        display: none;
+    }
+    
+	
 }

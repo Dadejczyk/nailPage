@@ -38,22 +38,24 @@ nav {
 		color: #fcf8ef;
 	}
 }
-
-.header {
+.headerbig {
+	display: none;
+}
+.headersmall {
 	display: flex;
-	width: 100%;
-	height: 100vh;
 	justify-content: center;
 	align-items: center;
-	position: relative;
+	width: 100%;
+	height: 100vh;
 	z-index: 0;
 	overflow: hidden;
 	background-image: url('../assets/Women_ShowingNails.jpg');
 	background-size: cover;
 	background-position: center;
+	background-repeat: no-repeat;
 	margin: 0;
 
-	&__bgc {
+	&__text {
 		width: 90%;
 		height: 70%;
 		display: flex;
@@ -84,7 +86,7 @@ nav {
 	}
 }
 .whatwedo {
-	background-color: #fff;
+	background-color: #fcf8ef;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -98,7 +100,7 @@ nav {
 	&__nails {
 		padding: 2em;
 		transition: transform 0.3s ease, box-shadow 0.3s ease;
-		background-color: rgba(244, 210, 185, 0.5);
+		background-color: #fcf8ef;
 		border-radius: 10px;
 		display: flex;
 		justify-content: center;
@@ -124,9 +126,12 @@ nav {
 		}
 	}
 }
-
-.ourstory {
+.ourstorybig {
+	display: none;
+}
+.ourstorysmall {
 	z-index: 10;
+	margin-bottom: 30px;
 	&__img {
 		position: absolute;
 		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)),
@@ -181,8 +186,6 @@ nav {
 .matchpolishes {
 	width: 100%;
 	height: 100vh;
-	position: relative;
-	z-index: 5;
 	display: flex;
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)),
 		url('../assets/newimg.jpg');
@@ -193,7 +196,7 @@ nav {
 	align-items: center;
 	flex-direction: column;
 	text-align: center;
-	margin-top: 20%;
+
 	&__heading {
 		font-family: serif;
 		font-size: 2.5rem;
@@ -205,15 +208,12 @@ nav {
 	height: 80vh;
 	padding-top: 4em;
 	&__box {
-  
 		display: flex;
 		color: #f1e9d6;
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;
 		text-align: center;
-		//
-	
 		&--heading {
 			font-size: 2.3rem;
 			margin-bottom: 20px;
@@ -222,17 +222,16 @@ nav {
 	}
 
 	&__treatmentprice {
-        padding-top: 3em;
+		padding-top: 3em;
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
-        padding: 20px;
+		padding: 20px;
 		&--item {
 			display: flex;
 			justify-content: space-between;
 			width: 100%;
 			margin-bottom: 30px;
-         
 		}
 		&--heading {
 			font-size: 1.2rem;
