@@ -213,6 +213,7 @@ nav .navbar-nav .show > .nav-link {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding: 20px;
 }
 .price__treatmentprice--item {
   display: flex;

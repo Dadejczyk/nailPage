@@ -226,11 +226,13 @@ nav {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
+        padding: 20px;
 		&--item {
 			display: flex;
 			justify-content: space-between;
 			width: 100%;
 			margin-bottom: 30px;
+         
 		}
 		&--heading {
 			font-size: 1.2rem;
