@@ -15,6 +15,7 @@ nav .navbar-toggler {
 }
 nav .navbar-brand {
   font-weight: bold;
+  font-family: "Raleway", serif;
 }
 nav .nav-link,
 nav .navbar-nav .show > .nav-link,
@@ -64,12 +65,14 @@ nav .navbar-nav .show > .nav-link {
   text-transform: uppercase;
   color: #f4d2b9;
   z-index: 1;
+  font-family: "Raleway", serif;
 }
 .header__bgc--text {
   font-size: 2rem;
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 90px;
+  font-family: "Raleway", serif;
   color: #f4d2b9;
 }
 
@@ -104,10 +107,12 @@ nav .navbar-nav .show > .nav-link {
   margin: 20px;
   color: #323232;
   font-size: 2rem;
+  font-family: "Playwrite HR Lijeva", cursive;
 }
 .whatwedo__nails p {
   color: #323232;
-  font-size: 1rem;
+  font-size: 1.5rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .ourstory {
@@ -138,8 +143,10 @@ nav .navbar-nav .show > .nav-link {
 .ourstory__box--heading {
   font-size: 2.5rem;
   margin-bottom: 20px;
+  font-family: serif;
 }
 .ourstory__box--text {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1rem;
 }
 .ourstory__box--btn {
@@ -151,12 +158,14 @@ nav .navbar-nav .show > .nav-link {
   border: 1px solid #f1e9d6;
   border-radius: 10px;
   transition: all 0.3s ease-in-out;
+  font-family: serif;
 }
 .ourstory__box--btn:hover {
   width: 170px;
   height: 60px;
   color: #323232;
   background-color: #f1e9d6;
+  font-family: serif;
 }
 
 .matchpolishes {
@@ -176,6 +185,7 @@ nav .navbar-nav .show > .nav-link {
   margin-top: 20%;
 }
 .matchpolishes__heading {
+  font-family: serif;
   font-size: 2.5rem;
   color: #f1e9d6;
 }
@@ -183,7 +193,7 @@ nav .navbar-nav .show > .nav-link {
 .price {
   background-color: #323232;
   height: 80vh;
-  padding-top: 3em;
+  padding-top: 4em;
 }
 .price__box {
   display: flex;
@@ -192,14 +202,14 @@ nav .navbar-nav .show > .nav-link {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 .price__box--heading {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   margin-bottom: 20px;
+  font-family: "Playwrite HR Lijeva", cursive;
 }
 .price__treatmentprice {
+  padding-top: 3em;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -208,17 +218,18 @@ nav .navbar-nav .show > .nav-link {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
-.price__treatmentprice--item--heading {
-  font-size: 1.5rem;
+.price__treatmentprice--heading {
+  font-size: 1.2rem;
   width: auto;
   margin-right: 0px;
+  font-family: "Playwrite HR Lijeva", cursive;
 }
-.price__treatmentprice--item--price1 {
-  font-size: 1.5rem;
-  font-weight: bold;
+.price__treatmentprice--price1 {
+  font-size: 1.2rem;
   width: auto;
+  font-family: "Playwrite HR Lijeva", cursive;
 }
 
 .fallowus__img1 {
@@ -254,6 +265,7 @@ nav .navbar-nav .show > .nav-link {
   text-align: center;
   font-size: 4rem;
   text-transform: uppercase;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .contact {
