@@ -53,6 +53,7 @@ nav .navbar-nav .show > .nav-link {
   background-image: url("../assets/Women_ShowingNails.jpg");
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   background-attachment: fixed;
   z-index: -1;
 }
@@ -174,11 +175,10 @@ nav .navbar-nav .show > .nav-link {
   position: relative;
   z-index: 5;
   display: flex;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgb(0, 0, 0)), url("../assets/21c1b7188c914eceb7234ccdf7284660.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgb(0, 0, 0)), url("../assets/newimg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   justify-content: center;
   align-items: center;
   flex-direction: column;
