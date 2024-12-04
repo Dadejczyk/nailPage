@@ -47,21 +47,11 @@ nav {
 	position: relative;
 	z-index: 0;
 	overflow: hidden;
-
-	&::before {
-		content: '';
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		background-image: url('../assets/Women_ShowingNails.jpg');
-		background-size: cover;
-		background-position: center;
-		background-repeat: no-repeat;
-		background-attachment: fixed;
-		z-index: -1;
-	}
+	background-image: url('../assets/Women_ShowingNails.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 
 	&__bgc {
 		width: 90%;
@@ -71,8 +61,8 @@ nav {
 		align-items: center;
 		border-radius: 10px;
 		position: relative;
-		background-color: #0000003a;
-		box-shadow: 0 0 15px 5px #0000003a;
+		background-color: #0000007c;
+		box-shadow: 0 0 15px 5px #0000007c;
 
 		&--heading {
 			font-size: 2.5rem;
@@ -189,7 +179,7 @@ nav {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	// background-attachment: fixed;
+	background-attachment: fixed;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
